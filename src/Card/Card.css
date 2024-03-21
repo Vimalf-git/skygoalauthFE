@@ -1,0 +1,78 @@
+.cardBox{
+    width: 18em;
+    height: 18em;
+    margin-top: 1rem;
+    border-radius: 8px;
+    box-shadow: 0  1.5rem 2rem rgb(0, 0, 0,.1);
+    background-color: rgb(190, 186, 186);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    /* justify-content: space-around; */
+    align-items: center;
+    position: relative;
+    top: 5rem;
+}
+.imgcon{
+    width: 5rem;
+    height: 5rem;
+    /* background-color: aqua; */
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cardimg{
+    width: 5rem;
+    height: 5rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+.cardBox:hover{
+    background-color: #fff;
+    transition: 1s;
+}
+.addtocartCon{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.addtocartbtn{
+    background-color: #F4424E !important;
+    color: #fff !important;
+    width: 80%;
+    border-radius: 4em !important;
+}
+.addtocartbtn:hover{
+    background-color: #F4424E;
+    color: #fff;
+    width: 80%;
+}
+.cardDesc{
+    display: flex;
+    justify-content: center;
+}
+.cardDesc>p{
+    text-align: center;
+}
+.admineditdeletebtn{
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+}
+.admindeletebtn{
+    color: #fff !important;
+    background-color: rgb(53, 200, 53) !important;
+}
+.admineditbtn{
+    width:5rem ;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    gap: .2rem;
+    align-items: center;
+    border-radius: 6px;
+    color: #fff !important;
+    background-color: rgb(71, 71, 209);
+}

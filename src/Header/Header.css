@@ -1,0 +1,49 @@
+.headerCon {
+    width: 100%;
+    height: 3.5em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.2rem;
+    background-color: rgb(255, 253, 252);
+    box-shadow: 0px 12px 28px 0px rgba(140, 149, 159, 0.3);
+    position: fixed;
+    top: 0%;
+    z-index: 1;
+}
+
+.dashboards {
+    display: flex;
+    gap: 1rem;
+}
+
+.dashboards>a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    color: black;
+    padding-bottom: 20px;
+    width: 3rem;
+    height: 2rem;
+}
+
+.dashboards>a.active {
+    border-bottom: 3px solid yellow;
+    height: 1.4rem;
+}
+
+.dashboards>a:hover {
+    border-bottom: 3px solid aquamarine;
+    height: 2rem;
+}
+
+button {
+    cursor: pointer;
+    width: 5rem;
+    height: 2rem;
+    font-weight: 700;
+    background-color: rgb(220, 94, 94);
+    color: #fff;
+    border: none;
+    border-radius: 2em;
+}
