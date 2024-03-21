@@ -4,6 +4,7 @@ import Login from './Login/Login'
 import SignUp from './SignUp/SignUp'
 import Home from './Home/Home'
 import ProtectedRoute from './ProtectedRoute/ProtectedRoute'
+import Friend from './Frd/Friend'
 function App() {
   return (
     <>
@@ -12,7 +13,7 @@ function App() {
           <Route index element={<Login />} />
           <Route path={'/login'} element={<Login />} />
           <Route path={'/signup'} element={<SignUp />} />
-          <Route path={'/home'} element={
+          <Route path={'/userList'} element={
             <>
               <ProtectedRoute>
                 <Home />
@@ -20,6 +21,11 @@ function App() {
             </>
 
           } />
+          <Route path='/home' element={<>
+          <ProtectedRoute>
+            <Friend/>
+          </ProtectedRoute>
+          </>}/>
         </Routes>
       </BrowserRouter>
     </>

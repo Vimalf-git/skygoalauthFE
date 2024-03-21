@@ -10,7 +10,7 @@ const Header = () => {
             <h5>SkyGoals</h5>
             <div className='dashboards'>
                 <NavLink to={'/home'}>Home</NavLink>
-                <Link to={'/ear'}>Frds</Link>
+                <NavLink to={'/userList'}>Frds</NavLink>
             </div>
             <div>
                 <button onClick={()=>{logout()}}>Logout</button>
